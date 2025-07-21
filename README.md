@@ -7,11 +7,11 @@ C'est mon "drive" PoleS you know the drill, on a du :
 
 ## Je ne suis un sous-titre
 
-Je sais ce que je fais
+Je sais ce que je fais (ptdrr non)
 
 `git init` ==> c'est comme un commentaire
 `<h1>Exemple de non interprétation de balise</h1>`
 
 ### Image
 
-![Ducktales](Img\image.png)
+![Ducktales](Img\2365320_xl.jpg)
