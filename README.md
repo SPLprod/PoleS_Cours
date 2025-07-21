@@ -14,4 +14,4 @@ Je sais ce que je fais (ptdrr non)
 
 ### Image
 
-![Ducktales](Img/2365320_xl.jpg)
+![Logo PoleS](Img/poles-logo.png)
