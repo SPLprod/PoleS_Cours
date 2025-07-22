@@ -1,0 +1,70 @@
+/* application général */
+* 
+{
+    background-color: azure;
+}
+
+body 
+{
+/* modifier la taille (16px par défaut) */
+    font-size: 20px;
+}
+
+/* application spécifique (overwrite général) */
+h1 
+{
+    font-size: 50px;
+    background-color: dimgrey;
+    color: white;
+}
+
+section p 
+{
+    color: dimgrey;
+    /* Tous les <p> de la balise <section> */
+}
+
+section p:first-child, section p:last-child 
+{
+    color: orangered;
+    /* premier enfant direct de section */
+}
+
+section p:nth-child(even) 
+{
+    color: coral;
+    /* les <p> de <section> en nombre pair */
+}
+
+section p:nth-child(odd) 
+{
+    color: rgb(137, 92, 182);
+    /* les <p> de <section> en nombre impair */
+}
+
+section p:nth-child(4) 
+{
+    color: red;
+    /* le <p> n°4 de <section> */
+}
+
+section p:nth-child(4) 
+{
+    font-size: 30px;
+    font-weight: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.zone 
+{
+    border: 1px solid dimgrey;
+    margin-bottom: 10px; /* mettre des marges exterieures*/
+    padding: 20px; /* mettre des marges interieures */
+}
+
+#zone5 
+{
+    border: 4px dotted red;
+    width: 50%; /* modifier la taille d'un bloc*/
+    height: 60%;
+}
