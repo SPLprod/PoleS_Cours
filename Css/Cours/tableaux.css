@@ -1,0 +1,44 @@
+* {
+    font-family: cursive;
+}
+
+caption {
+    font-size: 30px;
+    color: rebeccapurple;
+    padding: 3px;
+
+}
+
+body {
+    width: 50%;
+    margin: 0 auto;
+}
+
+table {
+    border: 4px solid magenta;
+    /* coller les bordures du tableau */
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th {
+    border: 2px dotted rebeccapurple;
+    background-color: bisque;
+    width: 20%;
+}
+
+td {
+    text-align: center;
+    border: 2px dashed pink;
+}
+
+th, td {
+    font-size: 20px;
+    padding: 5px;
+
+}
+
+td:first-child {
+    text-align: left;
+    background-color: bisque;
+}
