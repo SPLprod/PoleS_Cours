@@ -1,0 +1,91 @@
+/* Changer le fond de toute la page */
+body {
+	background-color: #f8e5dc;
+}
+
+/* Changer la taille et la couleur du titre Exo 3 sans class ou id */
+section:nth-child(6) h2 {
+	font-size: 35px;
+	color: blue;
+}
+
+/* section:nth-of-type(3) > h2 {
+	font-size: 20px;
+	color: blue;
+} */
+
+/* Ajouter un espace avant et après chaque hr */
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/* hr {
+	margin: 20px 0; haut/bas et gauche/droite
+	margin: valeur haut, valeur gauche, valeur bas, valeur droite
+} */
+
+/* Couleur saumon pour la phrase "Du saumon rose" sans class ou id */
+li:nth-child(2) {
+	color: salmon;
+}
+
+/* Changer la typographie du dernier paragraphe sans class ou id */
+section:nth-child(6) p:last-child {
+	color: red;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* section p:last-of-type {
+    color: red;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+} */
+
+/* Class pour le titre principal */
+.main_title {
+	text-decoration: underline;
+}
+
+/* Styliser les li impairs dans le ul de la section Exo 02 avec nth-child */
+section:nth-child(4) ul li:nth-child(odd) {
+	background-color: #2f920d;
+	width: 300px;
+}
+
+/* ID des sections avec couleur d'écriture et fond différent */
+#section1 {
+	color: #84123d;
+	background-color: #fff;
+}
+
+#section2 {
+	color: #3d2929;
+	background-color: #e6e6e6;
+}
+
+#section3 {
+	color: #480d0d;
+	background-color: #d9d9d9;
+}
+
+/* Dans le cas où on aurait voulu avoir un style commun dans ces 3 sections on aurait très bien pu mettre une classe aux 3 éléments:
+.font {
+	font-family:"Courier New", Courier, monospace;
+}
+ */
+
+/* Liens avec couleur, police, taille et italique */
+a {
+	color: green;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 20px;
+	font-style: italic;
+}
+
+/* Image avec taille et angles arrondis */
+img {
+	width: 200px;
+	border: 5px solid black;
+	border-radius: 15px;
+}
