@@ -1,0 +1,69 @@
+
+section:nth-of-type(3) h2 {
+    color: violet;
+    font-size: 50px;
+}
+
+section:nth-of-type(2) ul:nth-child(1) li {
+    background-color: aliceblue;
+}
+
+body 
+{
+    background-color: burlywood;
+}
+
+h2:nth-child(3) {
+    color: red;
+    font-size: 50px;
+}
+
+section ul li:nth-child(2)
+{
+    color: salmon;
+}
+
+hr 
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+p:last-child
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.Titre 
+{
+    text-decoration: underline;
+}
+
+a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: yellow;
+    font-style: italic;
+    font-size: 75px;
+}
+
+#Exo01 {
+    background-color: blueviolet;
+    color: orangered;
+}
+
+#Exo02 {
+    background-color: pink;
+    color: maroon;
+}
+
+#Exo03 { 
+    background-color: brown;
+    color: lightseagreen;
+    
+}
+
+img {
+    width: 50%;
+    height: auto;
+    border-radius: 50px;
+}
