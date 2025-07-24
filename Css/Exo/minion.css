@@ -1,0 +1,47 @@
+tr, th {
+    width: 47px;
+    height: 47px;
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+    border: solid 1px grey;
+}
+tr {
+    border: solid 1px grey;
+}
+
+body {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+
+
+.white {
+    background-color: white;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.black {
+    background-color: black;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
