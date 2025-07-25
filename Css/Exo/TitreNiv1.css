@@ -1,0 +1,39 @@
+header, footer {
+    background-color: lightpink;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjM1bnlhaHh0eGxodjNzbzF4eGx1MTM3NGUzeTU1aWs3YzNmNmNoOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/BHNfhgU63qrks/giphy.gif");
+    background-size: cover;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+main {
+    margin-top: 100px;
+    margin-bottom: 5000px;
+}
+
+p {
+    margin: 0;
+}
+
+footer p:nth-child(1) {
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+}
