@@ -1,0 +1,23 @@
+header, footer {
+    background-color: lightpink;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+main {
+    margin-top: 100px;
+}
