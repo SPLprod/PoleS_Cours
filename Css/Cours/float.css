@@ -1,0 +1,45 @@
+body {
+	margin: 0 auto;
+	background-color: rgb(244, 118, 213);
+}
+
+.boite {
+	height: 100px;
+	width: 15.5%;
+	background-color: aqua;
+	background: center url(../img/siamois.jpg);
+	/* 
+    background-image: url(https://monImage.fr);
+    */
+	padding: 15px;
+	margin: 30px;
+	border: 5px double rgb(255, 255, 255); /*taille, style, couleur de la bordure*/
+	float: left;
+	/* transition-duration: 500ms; */
+}
+
+.boite {
+	height: 100px;
+	width: 15.5%;
+	background-color: aqua;
+	background: center url(../img/siamois.jpg);
+	/* 
+    background-image: url(https://monImage.fr);
+    */
+	padding: 15px;
+	margin: 30px;
+	border: 5px double rgb(255, 255, 255); /*taille, style, couleur de la bordure*/
+	float: left;
+	transition-duration: 500ms;
+}
+
+/* mettre un clear pour annuler l'effet flottant de l'élément avant */
+.clear {
+	clear: left;
+}
+
+.boite:hover {
+	filter: grayscale(100%);
+	height: 150px;
+	width: 200px;
+}
