@@ -1,0 +1,38 @@
+* {
+	margin: 0 auto;
+}
+
+body {
+	background-image: url(../img/lapin.jpeg);
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.746);
+	color: antiquewhite;
+	font-size: 50px;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+nav {
+	background-color: rgb(76, 15, 132);
+	padding: 15px;
+	display: flex;
+	/* justify-content: space-between; */
+}
+
+a {
+	text-decoration: none;
+	background-color: blueviolet;
+	padding: 10px;
+	border-radius: 10px;
+	color: aliceblue;
+	font-size: 20px;
+}
+
+a:hover {
+	background-color: aliceblue;
+	color: blueviolet;
+}

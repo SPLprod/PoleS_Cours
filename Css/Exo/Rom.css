@@ -41,12 +41,16 @@ main {
     float: left;
     width: 30%;
     margin: 3% 1.5% 0;
-    height: 475px;
+    min-height: auto;
     background-color: #1e1e1e;
 }
 
 .cards:hover {
     background-color: #313131;
+}
+
+img:hover {
+    
 }
 
 .thumbnail {

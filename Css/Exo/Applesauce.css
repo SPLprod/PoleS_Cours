@@ -1,0 +1,23 @@
+body {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    border: solid 1px;
+    border-color: darkgreen;
+}
+
+html {
+    background-color: greenyellow;
+}
+
+nav {
+	background-image: url("../../Img/bg_menu.gif");
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+    color: whitesmoke;
+}
+
+main {
+    padding: 0 1%;
+}
