@@ -45,6 +45,10 @@ main {
     background-color: #1e1e1e;
 }
 
+.cards:hover {
+    background-color: #313131;
+}
+
 .thumbnail {
     width: 80%;
     height: 200px;
@@ -84,4 +88,8 @@ table, tr, td, th {
 
 caption {
     text-align: left;
+}
+
+a {
+    color: lightblue;
 }
