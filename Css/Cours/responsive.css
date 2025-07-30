@@ -1,0 +1,144 @@
+.container {
+	margin: 0 auto;
+}
+
+div {
+	margin: 0;
+}
+
+header {
+	background-color: #8e3557;
+	height: 100px;
+}
+
+nav {
+	background-color: #4a1a2c;
+	height: 50px;
+	padding-left: 2em;
+	line-height: 45px;
+}
+
+nav a {
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	padding-left: 2em;
+	border-right: 1px solid #fff;
+	padding-right: 2em;
+}
+
+footer {
+	background-color: palevioletred;
+	height: 100px;
+}
+
+nav a:last-child {
+	border-right: none;
+}
+
+section div {
+	width: 46%;
+	height: 450px;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.zone1,
+.zone4 {
+	background: linear-gradient(to left, #40a497, #6840a4);
+}
+
+.zone2,
+.zone3 {
+	background-color: #73adce;
+}
+
+main {
+	border: 1px solid black;
+}
+
+.zone3,
+.zone4 {
+	margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		width: 90%;
+	}
+
+	header {
+		background-color: #568e35;
+	}
+
+	section div {
+		width: 80%;
+	}
+
+	section {
+		flex-direction: column; /*on peut changer laxe principal de flex pour avoir affichage en bloc pour chaque div*/
+		align-items: center;
+	}
+
+	nav a {
+		display: block;
+		font-size: 16px;
+		border: none;
+	}
+
+	nav {
+		height: 150px;
+		line-height: 30px;
+	}
+
+	.zone2 {
+		margin-top: 15px;
+		background-color: orange;
+	}
+
+	footer {
+		background-color: #568e35;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	/*le debut de nouvel interval pour les tailles au dela de 992px*/
+	/*ici on ajoute le css pour reajuster l'affichage pour les ecrans superieur a 992px*/
+	.container {
+		width: 90%;
+	}
+
+	section {
+		justify-content: space-between;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	header {
+		background-color: #d46d19;
+	}
+
+	footer {
+		background-color: #d46d19;
+	}
+
+	section div {
+		width: 780px;
+	}
+
+	.zone2,
+	.zone3 {
+		background-color: #f479d8;
+	}
+
+	.zone1,
+	.zone4 {
+		background-color: blue;
+	}
+}
