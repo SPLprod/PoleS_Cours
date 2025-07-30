@@ -1,0 +1,9 @@
+span {
+	display: block;
+	border: 1px solid red;
+}
+
+.inline {
+	display: inline;
+	border: 1px solid red;
+}
