@@ -1,0 +1,50 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+
+header, footer {
+    color: white;
+}
+
+header * {
+    margin: 0;
+}
+
+#head, footer {
+    background-color: #c86d35;
+    padding: 7%;
+}
+
+#welcome {
+    background-image: url(../../Img/hero.jpg);
+    background-size: cover;
+    padding: 14%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main {
+    padding: 0 4%;
+}
+
+img {
+    width: 100%;
+}

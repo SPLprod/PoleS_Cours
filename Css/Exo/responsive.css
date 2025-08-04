@@ -71,8 +71,8 @@ footer {
     }
 
     img {
-    width: 21em;
-}
+    width: 45%;
+    }
 
     .p1, .p2 {
         flex-flow: wrap;
