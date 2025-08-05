@@ -9,12 +9,13 @@
 <body>
     <header>
         <div id="head">
-            <h1>Bolangerie Parisienne</h1>
-            <nav>   <ul>
-                    <li>À Propos</li>
+            <h1>Boulangerie Parisienne</h1>
+            <nav>   
+                <ul>
+                    <li><a href="#about">À Propos</a></li>
                     <!-- Section 2 -->
-                    <li>Menu</li>
-                    <li>Contact</li>
+                    <li><a href="#cards">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <!-- Faire en sorte que ce bouton amméne en bas de page -->
                 </ul>
             </nav>
@@ -23,20 +24,20 @@
         <section id="welcome">
         <h2>Bienvenue à la Boulangerie Parisienne</h2>
         <p>Découvrez nos délicieuses patisseries et pains frais</p>
-        <button>Voir le Menu</button>
+        <button><a href="#cards">Voir le Menu</a></button>
         </section>
 
     </header>
 
     <main>
-        <section>
+        <section id="about">
             <h2>À Propos de Nous</h2>
             <p>Située au coeur de Paris, notre boulangerie vous propose des produits frais et fais maison chaque jour.</p>
         </section>
 
         
         <h2>Notre Menu</h2>
-        <section id="cards">
+        <div id="cards">
             <div>
                 <img src="../../Img/croissants.jpg" alt="croissants">
                 <h3>Croissants</h3>
@@ -67,35 +68,35 @@
                 <h3>Tarte aux fruits</h3>
                 <p>Une tarte garnie de fruits frais</p>
             </div>
-        </section>
+        </div>
 
-        <section>
-            <h2></h2>
-            <p></p>
-            <p></p>
-            <p></p>
+        <section id="contact">
+            <div>
+                <h2>Contactez-nous</h2>
+                <p>Adresse : 123 Rue de Paris, 75001 Paris</p>
+                <p>Téléphone : 01 23 45 67 89</p>
+                <p>Email : contact@boulangerieparisienne.fr</p>
+            </div>
 
             <form>
                 <label for="name">Nom</label>
-                <input type="text" id="name" name="name" placeholder="Veuillez entrer votre Nom" required />
+                <input type="text" class="input" name="name" placeholder="Veuillez entrer votre Nom" required />
 
                 <label for="mail">Email</label>
-                <input type="email" id="mail" name="mail" placeholder="Veuillez entrer votre adresse e-mail" required />
+                <input type="email" class="input" name="mail" placeholder="Veuillez entrer votre adresse e-mail" required />
 
                 <label for="subject">Sujet</label>
-                <input type="text" id="subject" name="subject" required />
+                <input type="text" class="input" name="subject" required />
 
                 <label for="message">Message</label>
-                <input type="text" id="mess" name="mess" required />
+                <textarea type="message" rows="5" class="inputmess" name="mess" required></textarea>
 
                 <button>Envoyer</button>
             </form>
         </section>
     </main>
 
-    <footer>
-        ©2024 - Boulangerie Parisienne. Tous droits réservés.
-    </footer>
+    <footer>©2024 - Boulangerie Parisienne. Tous droits réservés.</footer>
     
 </body>
 </html>
