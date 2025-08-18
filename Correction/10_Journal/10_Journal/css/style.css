@@ -1,0 +1,103 @@
+/* Appliquer un style de base au body */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* Style pour l'en-tête */
+.header {
+	background-color: #ff6f61;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+
+/* Style pour la navigation */
+.nav {
+	background-color: #ffcc00; /* Changer la couleur de la navigation */
+	padding: 1em;
+}
+
+.nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.nav li {
+	margin: 0 1em;
+}
+
+.nav a {
+	color: #333;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+/* Conteneur de la grille principale */
+.grid-container {
+	display: grid; /* Utilisation de Grid Layout */
+	grid-template-columns: 3fr 1fr; /* Colonnes pour les articles et l'aside */
+	gap: 10px; /* Espacement entre les éléments de la grille */
+	padding: 2em;
+}
+
+/* Style pour le contenu principal */
+.section {
+	display: grid; /* Utilisation de Grid Layout */
+	grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour les articles */
+	gap: 10px;
+}
+
+/* Style pour les articles */
+.article {
+	background-color: #fff;
+	padding: 1em;
+	border: 1px solid #ddd;
+}
+
+/* Style pour la section latérale */
+.sidebar {
+	background-color: #f4f4f4;
+	padding: 1em;
+}
+
+/* Style pour le pied de page */
+.footer {
+	background-color: #ff6f61; /* Changer la couleur du footer */
+	color: #fff;
+	text-align: center;
+	padding: 1em;
+	margin-top: 1em;
+}
+
+/* Media queries pour le responsive design */
+
+/* Pour les écrans de taille moyenne */
+@media (max-width: 768px) {
+	.grid-container {
+		grid-template-columns: 1fr; /* 1 colonne */
+	}
+
+	.section {
+		grid-template-columns: 1fr; /* Articles empilés */
+	}
+}
+
+/* Pour les petits écrans */
+@media (max-width: 480px) {
+	.nav ul {
+		flex-direction: column; /* Navigation verticale */
+		text-align: center;
+	}
+
+	.nav li {
+		margin: 0.5em 0; /* Espacement vertical entre les liens de navigation */
+	}
+}

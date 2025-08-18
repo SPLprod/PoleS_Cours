@@ -1,0 +1,131 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: aliceblue;
+	margin: 0;
+	text-align: center;
+}
+
+.container {
+	width: 90%;
+	border: 2px solid olive;
+	margin: 0 auto;
+}
+
+.item1 {
+	width: 8.333333%;
+}
+.item2 {
+	width: 16.666666%;
+}
+.item3 {
+	width: 25%;
+}
+.item4 {
+	width: 33.333333%;
+}
+.item5 {
+	width: 41.666666%;
+}
+.item6 {
+	width: 50%;
+}
+.item7 {
+	width: 58.333333%;
+}
+.item8 {
+	width: 66.666666%;
+}
+.item9 {
+	width: 75%;
+}
+.item10 {
+	width: 83.333333%;
+}
+.item11 {
+	width: 91.666666%;
+}
+.item12 {
+	width: 100%;
+}
+
+/* le but premier de la classe row est d'être flex, flexible */
+.row {
+	/* rendre le conteneur flex  */
+	display: flex;
+	flex-direction: row;
+	/* le flex wrapp pour ne pas avoir de retour à la ligne sinon si il n'y a pas de places il ira mettre les contenus à la ligne */
+	flex-wrap: wrap;
+	background-color: bisque;
+	border: 2px solid white;
+}
+
+.bleu {
+	background: lightblue;
+	min-height: 60px;
+}
+
+.jaune {
+	background: rgb(247, 234, 60);
+	min-height: 60px;
+}
+
+.rose {
+	background: pink;
+	min-height: 60px;
+}
+
+.vert {
+	background: greenyellow;
+	min-height: 60px;
+}
+
+.saumon {
+	background: salmon;
+	min-height: 60px;
+}
+
+.violet {
+	background: violet;
+	min-height: 60px;
+}
+
+.red {
+	background: red;
+	min-height: 60px;
+}
+
+.marron {
+	background: maroon;
+	min-height: 60px;
+}
+.bisque {
+	background: bisque;
+	min-height: 60px;
+}
+
+.orange {
+	background: orange;
+	min-height: 60px;
+}
+
+.purple {
+	background: purple;
+	min-height: 60px;
+}
+
+.grid {
+	display: grid;
+	/* Permet de placer les éléments à parts égales selon le nombre de frames indiqué */
+	/* grid-template-columns: 1fr 1fr 1fr; */
+	grid-template-columns: repeat(4, 1fr);
+	gap: 5px;
+}
+
+.case.marron {
+	width: 40%;
+	grid-column: 1/4; /* colonne 1 à 4 donc occupe la place de 3 colonnes */
+	grid-row: 1/3; /* ligne 1 à 3 donc occupe la place de 2 colonnes */
+}

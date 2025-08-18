@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    color: rgb(255, 252, 246);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.151);
+}
+
+header {
+    background: linear-gradient(0deg,
+		rgba(34, 193, 195, 1) 0%,
+		rgba(45, 253, 149, 0.681) 100%
+	);
+    margin-bottom: 0.5em;
+    border-bottom: solid 1px white;
+    box-shadow: 0 0 10px rgba(0, 58, 19, 0.582);
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3em;
+    border-bottom: solid 1px white;
+}
+
+h1 {
+    background-image: url(../../Img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    padding: 1em ;
+    padding-left: 2.2em;
+    font-size: larger;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+ul a {
+    color: rgb(255, 252, 246);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.315);
+    text-decoration: none;
+    padding-left: 2em;
+}
+
+marquee {
+    border: solid 1px white; 
+    margin: 1px 0;
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main>* {
+    /* min-width: 80%; */
+    max-width: 50em;
+    margin: 0.5em;
+    padding: 1em;
+    border-radius: 0.7em;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 58, 19, 0.582);
+
+}
+
+main>*>*{
+    width: 50%;
+}
+
+main>*>div{
+    padding-top: 1em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main>div:nth-of-type(1) {
+    background: linear-gradient(
+		0deg,
+		rgba(191, 129, 148, 1) 0%,
+		rgba(86, 166, 241, 1) 100%
+	);
+}
+
+main>div:nth-of-type(2) {
+    background: linear-gradient(
+		0deg,
+		rgba(97, 227, 194, 1) 0%,
+		rgba(70, 134, 195, 1) 100%
+	);
+    
+}
+
+main>div:nth-of-type(3) {
+    background: linear-gradient(
+		0deg,
+		rgba(226, 132, 23, 1) 0%,
+		rgba(92, 144, 181, 1) 75%
+	);
+    
+}
+
+main>div:nth-of-type(2) {
+    text-align: center;
+}
+
+main>div:nth-of-type(3) {
+    text-align: right;
+}
+
+article>p{
+    line-height:22px;
+}
+
+img {
+    border-radius: 50%;
+    height: 15em;
+    width: 15em;
+    object-fit: cover;
+}
+
+footer {
+    background: linear-gradient(0deg,
+		rgba(34, 193, 195, 1) 0%,
+		rgba(45, 253, 149, 0.681) 100%
+	);
+    padding: 0.3em 1em;
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+svg {
+    width: 1.5em;
+    height: auto;
+    filter:invert();
+}
+
+@media screen and (max-width: 768px){
+    ul{
+        flex-direction: column;
+    }
+
+    main>*{
+        flex-direction: column;
+    }
+
+    main>*>*{
+        width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+}
