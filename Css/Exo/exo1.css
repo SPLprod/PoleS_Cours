@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: lightgray;
+}
+
+body * {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+header, footer {
+    padding: 2.5em;
+    background-color: white;
+    padding-left: 10em;
+    /* text-align: center; */
+}
+
+main {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    padding: 3em 10em 2em 2em;
+    /* padding-right: 10em; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    height: 70vh;
+}
+
+div {
+    padding: 5em;
+    aspect-ratio: 1 / 1;
+}
+
+div:first-of-type {
+    grid-column-start: 2;
+}
+
+div:nth-of-type(even):not(div:last-of-type) {
+    grid-column-start: 3;
+}
+
+div:nth-of-type(odd):not(div:first-of-type) {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+div:last-of-type {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+div:nth-of-type(odd) {
+    background-color: rgba(0, 255, 255, 0.5);
+}
+
+div:nth-of-type(even) {
+    background-color: rgba(0, 0, 255, 0.5);
+}

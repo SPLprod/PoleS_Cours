@@ -5,30 +5,31 @@ const produits = [
     { product: "Jeans", price: 40, category: "Vêtements" },
     { product: "Pantalon", price: 50, category: "Vêtements" },
 ];
-let i = 0;
 
 function itype(rank) {
-    document.querySelector("ul").innerHTML = " "
-    while (i < produits.length) {
+    toPrint = ""
+    for (i=0 ; i<produits.length ; ++i) {
         if (rank == null) {
-            document.querySelector("ul").innerHTML += `<li>${produits[i].product} ${produits[i].price} ${produits[i].category}</li>`;
-            ++i;
+            toPrint += `<li>${produits[i].product} ${produits[i].price}€ ${produits[i].category}</li>`;
+            console.log(toPrint);
+            
         } else if (rank == produits[i].category) {
-            document.querySelector("ul").innerHTML += `<li>${produits[i].product} ${produits[i].price} ${produits[i].category}</li>`;
-            ++i;
-        }
+            toPrint += `<li>${produits[i].product} ${produits[i].price}€ ${produits[i].category}</li>`;
+            console.log(toPrint);
+        } 
     }
+    document.querySelector("ul").innerHTML = toPrint;    
 }
 
 // function itype(rank) {
 //     toPrint = ""
-//     for (i=0 ; i<produits.length ; ++i) {
+//     for (const prod of produits) {
 //         if (rank == null) {
-//             toPrint += `<li>${produits[i].product} ${produits[i].price}€ ${produits[i].category}</li>`;
+//             toPrint += `<li>${prod.product} ${prod.price}€ ${prod.category}</li>`;
 //             console.log(toPrint);
             
-//         } else if (rank == produits[i].category) {
-//             toPrint += `<li>${produits[i].product} ${produits[i].price}€ ${produits[i].category}</li>`;
+//         } else if (rank == prod.category) {
+//             toPrint += `<li>${prod.product} ${prod.price}€ ${prod.category}</li>`;
 //             console.log(toPrint);
 //         } 
 //     }
