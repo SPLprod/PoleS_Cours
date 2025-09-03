@@ -1,0 +1,17 @@
+.jour {
+    background: rgb(255, 212, 69);
+}
+
+.nuit {
+    background: rgb(61, 106, 156);
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
