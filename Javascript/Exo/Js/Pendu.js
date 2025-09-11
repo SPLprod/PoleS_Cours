@@ -7,11 +7,18 @@ for (const letter of word) {
     ++i
 }
 console.log(guess);
-
 let guesBtn = document.querySelector("button");
 guesBtn.addEventListener("click", function () {
     uGuess = window.prompt("Take a guess");
     console.log(uGuess);
+
+    for (i=0;i<guess.length;++i) {
+        if (uGuess == guess[i]) {
+            alert("correct")
+        }
+    }
+
+    
 })
 
 
